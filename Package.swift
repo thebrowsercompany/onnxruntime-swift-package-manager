@@ -24,10 +24,10 @@ let package = Package(
                 .macOS(.v11)],
     products: [
         .library(name: "onnxruntime",
-                 type: .static,
+                 type: .dynamic,
                  targets: ["OnnxRuntimeBindings"]),
         .library(name: "onnxruntime_extensions",
-                 type: .static,
+                 type: .dynamic,
                  targets: ["OnnxRuntimeExtensions"]),
     ],
     dependencies: [],
